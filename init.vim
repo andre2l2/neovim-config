@@ -7,6 +7,8 @@ Plug 'junegunn/fzf.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.5' }
 call plug#end()
 
 colorscheme dracula
@@ -21,7 +23,7 @@ nnoremap <leader>ev :vsplit ~/.config/nvim/init.vim<cr>
 nnoremap <leader>sv :source ~/.config/nvim/init.vim<cr>
 nnoremap <leader>; A;<esc>
 
-nnoremap <c-p> :Files<cr>
+nnoremap <c-p> :Telescope find_files<cr>
 nnoremap <c-f> :Ag<space>
 
 let g:UltiSnipsEditSplit='vertical'
